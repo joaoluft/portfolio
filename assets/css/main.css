@@ -1,0 +1,25 @@
+body {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+::-webkit-scrollbar-track {
+   background: rgba(22, 22, 22, 1);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+.preloader {
+  transition: opacity 0.25s linear; /* when we change the opacity, use these transition settings */
+}
+
+.preloader.fade {
+  opacity: 0;  /* when we add the class fade, set the opacity to 0 using the above transition */
+}
