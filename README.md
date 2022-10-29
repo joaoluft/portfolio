@@ -4,5 +4,5 @@
 
 *Página web construída para a minha apresentação (João Luft), demonstrando projetos, habilidades e conexões profissionais.*
 
-<img src="https://cdn.discordapp.com/attachments/841662224233136149/1033846668552065054/screencapture-joaoluft-github-io-portfolio-2022-10-23-17_47_49.png"></img>
+<img src="https://cdn.discordapp.com/attachments/996570737437593650/1035768256771928104/FireShot_Capture_004_-_Joao_Luft_-_joaoluft.github.io.png"></img>
 
