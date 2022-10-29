@@ -15,11 +15,10 @@
 <body class="bg-black">
     <div class="preloader">
         <div
-            class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-black flex flex-col items-center justify-center">
+            class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen overflow-hidden bg-black flex flex-col items-center justify-center">
             <img class="w-24 animate-pulse" src="assets/images/loader.webp" alt="Loader">
         </div>
     </div>
-
 
     <section class="navbar">
         <div class="relative w-full p-4 md:p-6 border-b border-zinc-800">
@@ -53,10 +52,326 @@
 
     <main class="h-full p-6">
 
+
+
+        <!-- Findpetz Modal -->
+        <div
+            class="findpetz-modal modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-zinc-900 opacity-80"></div>
+
+            <div
+                class="modal-container text-gray-200 bg-zinc-900 border-2 border-zinc-800 w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+
+                <div class="modal-content py-4 text-left px-6">
+
+                    <div class="flex justify-between items-center pb-4">
+                        <p class="text-3xl font-medium">Findpetz</p>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="grid place-items-center">
+                            <div class="max-w-2xl mx-auto">
+                                <div id="default-carousel" class="relative" data-carousel="static">
+                                    <div class="overflow-hidden relative h-80 rounded-lg">
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/findpetz/01.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/findpetz/02.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/findpetz/03.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+                                    </div>
+
+                                    <button type="button"
+                                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="text-gray-200 w-5 h-5" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 19l-7-7 7-7"></path>
+                                            </svg>
+                                            <span class="hidden">Voltar</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                            <span class="hidden">Avançar</span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <p class="text-justify pt-6 pb-2">
+                                    Aplicação feita com o intuito da melhor administração dos seus pets, contendo um
+                                    sistema
+                                    de feed com postagens e perfis para cada pet. A Findpetz visa a segurança do seu
+                                    pet,
+                                    sabendo disso criou sua coleira inteligente que possui um QR Code que leva
+                                    diretamente
+                                    ao perfil do pet no aplicativo, podendo assim verificar os dados do dono, histórico
+                                    vacinal e muito mais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start pt-6 mt-4 flow-root border-t border-zinc-800">
+                        <div class="float-left">
+                            <button
+                                class="modal-close uppercase text-sm font-medium px-4 py-2 bg-zinc-800 shadow-lg rounded-lg text-white">Fechar</button>
+                        </div>
+
+                        <div class="float-right">
+                            <div class="py-1">
+                                <span class="font-medium text-sm uppercase">Clique <kbd
+                                        class="ml-0.5 mr-0.5 px-2 py-1 text-sm font-semibold text-gray-200 bg-zinc-800 rounded-lg">ESC</kbd>
+                                    para fechar</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Tech Boost Modal -->
+        <div
+            class="techboost-modal modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-zinc-900 opacity-80"></div>
+
+            <div
+                class="modal-container text-gray-200 bg-zinc-900 border-2 border-zinc-800 w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+
+                <div class="modal-content py-4 text-left px-6">
+
+                    <div class="flex justify-between items-center pb-4">
+                        <p class="text-3xl font-medium">Tech Boost</p>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="grid place-items-center">
+                            <div class="max-w-2xl mx-auto">
+                                <div id="default-carousel" class="relative" data-carousel="static">
+                                    <div class="overflow-hidden rounded-lg relative h-80">
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/techboost/01.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/techboost/02.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/techboost/03.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+                                    </div>
+
+                                    <button type="button"
+                                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="text-gray-200 w-5 h-5" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 19l-7-7 7-7"></path>
+                                            </svg>
+                                            <span class="hidden">Voltar</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                            <span class="hidden">Avançar</span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <p class="text-justify pt-6 pb-2">
+                                    Software pensado na otimização dos sistemas operacionais Windows com foco no mundo
+                                    Gamer, utilizando tecnologias nativas do sistema operacional para trazer um melhor
+                                    desempenho e latitude para jogos e programas pesados sem deixar de lado a
+                                    usabilidade,
+                                    assim trazendo o melhor dos dois mundos para uma experiência só.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start pt-6 mt-4 flow-root border-t border-zinc-800">
+                        <div class="float-left">
+                            <button
+                                class="modal-close uppercase text-sm font-medium px-4 py-2 bg-zinc-800 shadow-lg rounded-lg text-white">Fechar</button>
+                        </div>
+
+                        <div class="float-right">
+                            <div class="py-1">
+                                <span class="font-medium text-sm uppercase">Clique <kbd
+                                        class="ml-0.5 mr-0.5 px-2 py-1 text-sm font-semibold text-gray-200 bg-zinc-800 rounded-lg">ESC</kbd>
+                                    para fechar</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Suplystore Modal -->
+        <div
+            class="suplystore-modal modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-zinc-900 opacity-80"></div>
+
+            <div
+                class="modal-container text-gray-200 bg-zinc-900 border-2 border-zinc-800 w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+
+                <div class="modal-content py-4 text-left px-6">
+
+                    <div class="flex justify-between items-center pb-4">
+                        <p class="text-3xl font-medium">Suply Store</p>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="grid place-items-center">
+                            <div class="max-w-2xl mx-auto">
+                                <div id="default-carousel" class="relative" data-carousel="static">
+                                    <div class="overflow-hidden relative h-80 rounded-lg">
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/suplystore/01.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/suplystore/02.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <img src="./assets/images/suplystore/03.webp"
+                                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                                        </div>
+                                    </div>
+
+                                    <button type="button"
+                                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="text-gray-200 w-5 h-5" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 19l-7-7 7-7"></path>
+                                            </svg>
+                                            <span class="hidden">Voltar</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-zinc-800 duration-300 ease-in-out group-hover:bg-zinc-700 group-focus:ring-0 group-focus:outline-none">
+                                            <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                            <span class="hidden">Avançar</span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <p class="text-justify pt-6 pb-2">
+                                    Sistema web (e-commerce) que visa vender roupas e acessórios para um público mais
+                                    jovem,
+                                    desenvolvido preservando a facilidade na usabilidade e com um sistema integrado
+                                    diretamente com a
+                                    <a
+                                        href="https://www.mercadopago.com.br/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=79642323&matt_word=MLB_MP_G_AO_OP_COW_BRAND_SELL_CONV_TRANPARENTE&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4pi1BIuMNkr-r9hzwO8kerpY3I9DbAcr1o1C9QKsQEJ1SsgO_BKKGRoC8UoQAvD_BwE">
+                                        <strong class="underline">API MercadoPago</strong></a> para a total segurança no
+                                    trânsito de dados do sistema de pagamentos. Fornecendo assim, uma logística de total
+                                    transparência e agilidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start pt-6 mt-4 flow-root border-t border-zinc-800">
+                        <div class="float-left">
+                            <button
+                                class="modal-close uppercase text-sm font-medium px-4 py-2 bg-zinc-800 shadow-lg rounded-lg text-white">Fechar</button>
+                        </div>
+
+                        <div class="float-right">
+                            <div class="py-1">
+                                <span class="font-medium text-sm uppercase">Clique <kbd
+                                        class="ml-0.5 mr-0.5 px-2 py-1 text-sm font-semibold text-gray-200 bg-zinc-800 rounded-lg">ESC</kbd>
+                                    para fechar</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
         <!-- About me -->
         <section class="aboutme border-b border-zinc-800 pt-16 pb-16">
-            <div class="container mx-auto pr-4 md:pr-0 pl-6 md:pl-0 flex flex-wrap flex-row items-center">
-
+            <!-- Desktop view -->
+            <div
+                class="hidden md:flex container mx-auto pr-4 md:pr-0 pl-6 md:pl-0 flex flex-wrap flex-row items-center">
                 <div class="flex flex-col text-white w-1/2 items-start overflow-y-hidden">
                     <div class="text-center">
                         <h1 class="text-gray-200 text-2xl md:text-4xl font-medium">Sobre mim</h1>
@@ -74,6 +389,30 @@
                     <img class="mx-auto min-w-full w-3/4 object-cover" src="assets/images/foto.webp">
                 </div>
             </div>
+
+
+            <!-- Mobile view -->
+            <div class="block md:hidden container">
+                <div class="overflow-hidden">
+                    <img class="mx-auto w-5/6 object-cover" src="assets/images/foto.webp">
+                </div>
+
+                <div class="text-white">
+                    <div class="text-center">
+                        <h1 class="text-gray-200 text-2xl font-medium">Sobre mim</h1>
+                        <h3 class="text-gray-200 text-lg pt-2">Olá, me chamo João Luft, sou um
+                            jovem amante da tecnologia e atuo e
+                            estudo programação há 2 anos, com foco no <strong>Desenvolvimento Web</strong>
+                            onde realizei multiplos <a href="#projetos"><strong>projetos</strong></a> na área,
+                            procurando
+                            aperfeiçoar a cada dia mais minhas <a href="#tecnologias"><strong>habilidades</strong></a>.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
 
         <!-- Projetos -->
@@ -98,8 +437,9 @@
                                 vacinal e muito mais.
                             </p>
 
-                            <a class="underline text-xs uppercase font-medium text-zinc-400" href="">Clique para ver
-                                mais+</a>
+                            <a data-modal="findpetz-modal"
+                                class="modal-open underline  cursor-pointer text-xs uppercase font-medium text-zinc-400">Clique
+                                para ver mais+</a>
                         </div>
 
                     </div>
@@ -119,8 +459,9 @@
                                 assim trazendo o melhor dos dois mundos para uma experiência só.
                             </p>
 
-                            <a class="underline text-xs uppercase font-medium text-zinc-400" href="">Clique para ver
-                                mais+</a>
+                            <a data-modal="techboost-modal"
+                                class="modal-open underline cursor-pointer text-xs uppercase font-medium text-zinc-400">Clique
+                                para ver mais+</a>
                         </div>
                     </div>
 
@@ -144,8 +485,9 @@
                                 transparência e agilidade.
                             </p>
 
-                            <a class="underline text-xs uppercase font-medium text-zinc-400" href="">Clique para ver
-                                mais+</a>
+                            <a data-modal="suplystore-modal"
+                                class="modal-open underline cursor-pointer text-xs uppercase font-medium text-zinc-400">Clique
+                                para ver mais+</a>
                         </div>
 
                     </div>
@@ -178,12 +520,13 @@
                                     </div>
 
                                     <div class="pt-4">
-                                        <h3 class="text-gray-400">Bibliotecas</h3>
+                                        <h3 class="text-gray-400">Tecnologias</h3>
                                         <ul class="list-none pb-4 pt-1 text-md">
                                             <li>React</li>
-                                            <li>Bootstrap</li>
-                                            <li>Tailwind css</li>
                                             <li>jQuery</li>
+                                            <li>Bootstrap</li>
+                                            <li>Tailwind CSS</li>
+                                            <li>Materialize CSS</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -205,15 +548,16 @@
                                 <div class="text-xl">
                                     <div class="pt-4">
                                         <h3 class="text-gray-400">Linguagens</h3>
-                                        <p class="pb-4 pt-1">Javascript, Python, PHP e Lua</p>
+                                        <p class="pb-4 pt-1">Javascript, Typescript, Python e PHP</p>
                                     </div>
 
                                     <div class="pt-4">
                                         <h3 class="text-gray-400">Tecnologias</h3>
                                         <ul class="list-none pb-4 pt-1 text-md">
                                             <li>Node JS</li>
+                                            <li>Express</li>
+                                            <li>PostgreSQL, MongoDB e MySQL</li>
                                             <li>Electron JS</li>
-                                            <li>PostgreSQL & MySQL</li>
                                             <li>Flask</li>
                                         </ul>
                                     </div>
@@ -246,6 +590,7 @@
                                             <li>Inteligência emocional</li>
                                             <li>Gerenciamento de tempo</li>
                                             <li>Comunicação objetiva</li>
+                                            <li>Autodidata</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -293,7 +638,10 @@
 
     </section>
 
+    <!-- Carousel -->
+    <script src="assets/js/flowbite.js"></script>
 
+    <!-- Modal & Others-->
     <script src="assets/js/main.js"></script>
 </body>
 

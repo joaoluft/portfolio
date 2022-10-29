@@ -15,11 +15,23 @@ body {
   outline: 1px solid slategrey;
 }
 
-
-.preloader {
-  transition: opacity 0.25s linear; /* when we change the opacity, use these transition settings */
+.loadingOut {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0px;
+  transition: max-height 1s, opacity 1s, visibility 1s linear;
 }
 
-.preloader.fade {
-  opacity: 0;  /* when we add the class fade, set the opacity to 0 using the above transition */
+.modal {
+  transition: opacity 0.25s ease;
 }
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+.slide[data-state=active] {
+  display: block;
+}
+
+
