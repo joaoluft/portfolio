@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Blinking Effect */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.projectsCarousel {
+  max-height: 30rem;
+}
+ 
+.projectsCarousel .Card {
+  flex: 1 0 auto;
+}
