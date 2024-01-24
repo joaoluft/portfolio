@@ -102,6 +102,16 @@ $(document).ready(function () {
         {
             "name": "MySQL",
             "icon": "./assets/images/coding-skills/mysql.webp"
+        },
+
+        {
+            "name": "C#",
+            "icon": "./assets/images/coding-skills/csharp.webp"
+        },
+
+        {
+            "name": ".NET",
+            "icon": "./assets/images/coding-skills/dotnet.webp"
         }
     ];
 
