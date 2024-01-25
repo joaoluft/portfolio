@@ -66,12 +66,7 @@ $(document).ready(function () {
         },
 
         {
-            "name": "Bootstrap",
-            "icon": "./assets/images/coding-skills/bootstrap.webp"
-        },
-
-        {
-            "name": "Tailwind",
+            "name": "Tailwind CSS",
             "icon": "./assets/images/coding-skills/tailwind.webp"
         },
 
@@ -102,6 +97,11 @@ $(document).ready(function () {
         {
             "name": "MySQL",
             "icon": "./assets/images/coding-skills/mysql.webp"
+        },
+
+        {
+            "name": "Postgree SQL",
+            "icon": "./assets/images/coding-skills/postgreesql.webp"
         },
 
         {
