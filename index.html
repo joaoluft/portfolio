@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script> <!-- Desenvolvimento -->
+
+    <!-- Carrousel lib -->
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
 </head>
 
 <body class="bg-gray-200">
@@ -53,7 +57,8 @@
                             <img class="w-10" src="./assets/images/icons/github.webp" alt="Github - João Luft">
                         </a>
 
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!">
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!">
                             <img class="w-10" src="./assets/images/icons/whatsapp.webp" alt="Whatsapp - João Luft">
                         </a>
                     </div>
@@ -84,7 +89,9 @@
                                 <a target="_blank" href="./assets/documents/João Luft - CV.pdf"
                                     class="bg-blue-700 text-sm sm:text-sm lg:text-lg transition-colors duration-300 hover:bg-blue-800 rounded-full px-4 py-3 lg:px-6 lg:py-3 text-white font-bold">Baixar
                                     CV</a>
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!" class="border-2 text-sm sm:text-sm lg:text-lg border-blue-700 text-blue-700 transition-colors duration-300 hover:bg-blue-800 hover:border-blue-800 hover:text-white rounded-full px-4 py-2.5 lg:px-6 lg:py-2. font-bold">Entrar
+                                <a target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!"
+                                    class="border-2 text-sm sm:text-sm lg:text-lg border-blue-700 text-blue-700 transition-colors duration-300 hover:bg-blue-800 hover:border-blue-800 hover:text-white rounded-full px-4 py-2.5 lg:px-6 lg:py-2. font-bold">Entrar
                                     em contato</a>
                             </div>
 
@@ -97,10 +104,12 @@
             </div>
         </section>
 
-        <div class="mt-12 md:mt-24 mb-20 md:mb-24 md:mt-32 md:mb-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto border border-blue-700/10" data-aos="fade-up"></div>
+        <div class="mt-12 md:mt-24 mb-20 md:mb-24 md:mt-32 md:mb-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto border border-blue-700/10"
+            data-aos="fade-up"></div>
 
         <section class="px-6 lg:px-32 lg:pb-32">
-            <h1 class="text-blue-700 font-bold text-4xl lg:text-5xl text-center pb-6 md:pb-10" data-aos="fade-down">Sobre
+            <h1 class="text-blue-700 font-bold text-4xl lg:text-5xl text-center pb-6 md:pb-10" data-aos="fade-down">
+                Sobre
                 mim</h1>
 
             <p class="text-center text-xl px-0 xl:px-32" data-aos="fade-up">Olá, me chamo <strong>João
@@ -113,7 +122,8 @@
                 maiores projetos.</p>
         </section>
 
-        <div class="mt-24 mb-24 md:mt-32 md:mb-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto border border-blue-700/10" data-aos="fade-up"></div>
+        <div class="mt-24 mb-24 md:mt-32 md:mb-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto border border-blue-700/10"
+            data-aos="fade-up"></div>
 
         <section class="px-6 lg:px-32 lg:pb-32">
             <div class="px-6">
@@ -134,19 +144,36 @@
 
         <section class="px-6 lg:px-32" data-aos="fade-up">
             <h1 class="text-blue-700 font-bold text-4xl lg:text-5xl text-center pb-10">Projetos</h1>
-            <div class="border-2 border-gray-300 rounded-xl p-1">
-                <div class="w-full overflow-hidden rounded-xl">
-                    <section class="space-x-4 projectsCarousel h-[50vw] relative flex overflow-hidden" id="carousel">
-                    </section>
-                </div>
-            </div>
-            <nav id="Pagination" class="absolute">
-                <div class="bg-gray-300 space-x-2 rounded-xl p-2 mt-2 Dots"></div>
-            </nav>
-        </section>
 
-        <div class="mt-24 mb-24 md:mt-32 md:mb-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto border border-blue-700/10"></div>
+            <div class="px-6 lg:px-24">
+                <div class="p-4 bg-gray-300 rounded-2xl">
+                    <div class="projectsCarrousel rounded-xl overflow-hidden"></div>
+                </div>
+
+                <div class="projectsCarrouselNav"></div>
+
+                <div class="flex pt-2 pl-4 space-x-1">
+                    <a class="projectsCarrouselPrevious cursor-pointer transition-all bg-blue-700 hover:bg-blue-900 p-2 text-white rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-6 h-6 pr-0.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </a>
+                    <a class="projectsCarrouselNext cursor-pointer transition-all bg-blue-700 hover:bg-blue-900 p-2 text-white rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-6 h-6 pl-0.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+
+                    <span class="pt-3 pl-2.5 text-xs text-gray-500">Exibindo <span class="projectsCount"></span> projetos.</span>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+    <div class="mt-32 max-w-sm md:max-w-2xs lg:max-w-md flex mx-auto"></div>
 
     <section>
         <div class="bg-blue-700">
@@ -169,7 +196,8 @@
                                 <img class="w-6" src="./assets/images/icons/github.webp" alt="Github - João Luft">
                             </a>
 
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5551999268603&text=Ol%C3%A1,%20estou%20interessado%20nos%20seus%20servi%C3%A7os%20como%20desenvolvedor%20Fullstack!">
                                 <img class="w-6" src="./assets/images/icons/whatsapp.webp" alt="Whatsapp - João Luft">
                             </a>
                         </div>
@@ -179,6 +207,7 @@
     </section>
 
     <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

@@ -20,11 +20,3 @@ body::-webkit-scrollbar{
         opacity: 0;
     }
 }
-
-.projectsCarousel {
-  max-height: 30rem;
-}
- 
-.projectsCarousel .Card {
-  flex: 1 0 auto;
-}
