@@ -1,1 +1,1 @@
-tailwindcss -i ./input.css -o ./output.css --watch
+tailwind.exe -i ./input.css -o ./output.css --watch
