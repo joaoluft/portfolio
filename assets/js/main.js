@@ -74,10 +74,6 @@ $(document).ready(function () {
             "name": "Javascript",
             "icon": "./assets/images/coding-skills/javascript.webp"
         },
-        {
-            "name": "jQuery",
-            "icon": "./assets/images/coding-skills/jquery.webp"
-        },
 
         {
             "name": "React.JS",
@@ -112,6 +108,11 @@ $(document).ready(function () {
         {
             "name": ".NET",
             "icon": "./assets/images/coding-skills/dotnet.webp"
+        },
+
+        {
+            "name": "JAVA",
+            "icon": "./assets/images/coding-skills/java.webp"
         }
     ];
 
